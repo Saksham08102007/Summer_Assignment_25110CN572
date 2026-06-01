@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 int main () {
-    int n,r,reverse=0;
+    int n,reverse=0,r;
     printf("Enter number: ");
     scanf("%d",&n);
     while(n > 0) {
