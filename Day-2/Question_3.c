@@ -3,9 +3,15 @@
 #include <stdio.h>
 
 int main () {
-    int n,i,r,product=1;
+    int n,r,product=1;
     printf("Enter number: ");
     scanf("%d",&n);
+    if (n < 0) {
+        n = -n;
+    }
+    if (n == 0) {
+        product = 0;
+    }
     while(n > 0) {
         r = n % 10;
         n = n / 10;

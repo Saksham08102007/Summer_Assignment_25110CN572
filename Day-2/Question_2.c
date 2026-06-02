@@ -3,14 +3,18 @@
 #include <stdio.h>
 
 int main () {
-    int n,reverse=0,r;
+    int n,reverse=0,r,s=1;
     printf("Enter number: ");
     scanf("%d",&n);
+    if (n < 0) {
+        s = -1;
+        n = -n;
+    }
     while(n > 0) {
         r = n % 10;
         n = n / 10;
         reverse = (reverse * 10) + r;
     }
-    printf("Reverse of the number is : %d\n",reverse);
+    printf("Reverse of the number is : %d\n",reverse * s);
     return 0;
 }

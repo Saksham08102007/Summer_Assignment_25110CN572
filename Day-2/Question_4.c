@@ -3,9 +3,12 @@
 #include <stdio.h>
 
 int main () {
-    int n,i,r,reverse=0,temp;
+    int n,r,reverse=0,temp;
     printf("Enter number: ");
     scanf("%d",&n);
+    if (n < 0) {
+        n = -n; 
+    }
     temp = n;
     while(n > 0) {
         r = n % 10;
