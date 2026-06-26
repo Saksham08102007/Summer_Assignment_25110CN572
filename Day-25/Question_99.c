@@ -15,7 +15,6 @@ int main() {
     for(i = 0; i < n - 1; i++) {
         for(j = i + 1; j < n; j++) {
             if(strcmp(names[i], names[j]) > 0) {
-                // Swap names
                 strcpy(temp, names[i]);
                 strcpy(names[i], names[j]);
                 strcpy(names[j], temp);
